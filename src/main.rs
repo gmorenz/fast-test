@@ -28,7 +28,7 @@ fn main() {
 
     let game_iter_settings = GameIteratorSettings {
         updates_per_second: 120,
-        max_frames_per_second: 60,
+        max_frames_per_second: 15,
     };
 
     let mut game_iter = GameIterator::new( &mut window, &game_iter_settings );
@@ -48,7 +48,6 @@ fn main() {
             }
             Update(_) => {
                 times.push(format!("Update: {}", (precise_time_ns() - time)/1000000));
-                sleep(6);
                 time = precise_time_ns();
             }
             _ => {}
