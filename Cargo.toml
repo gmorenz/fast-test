@@ -1,0 +1,19 @@
+[package]
+
+name = "test-loop"
+version = "0.0.0"
+authors = ["Greg Morenz <morenzg@gmail.com>"]
+tags = []
+
+[[bin]]
+
+name = "test-loop"
+path = "src/main.rs"
+
+[dependencies.piston]
+
+git = "file:///home/normal/rust/working/piston"
+
+[dependencies.sdl2_game_window]
+
+git = "file:///home/normal/rust/working/sdl2_game_window"
